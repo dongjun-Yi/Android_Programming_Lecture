@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Apperance">
+
+        <EditTextPreference
+            android:defaultValue="Hello World!"
+            app:key="Name"
+            app:title="Name"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="small"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="Size"
+            app:title="Size"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="Italic"
+            android:title="Italic" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

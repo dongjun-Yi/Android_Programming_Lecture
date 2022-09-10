@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Week6_HW</string>
+    <string name="android_programming">안드로이드 프로그래밍</string>
+    <string name="dog">개</string>
+    <string name="cat">고양이</string>
+</resources>

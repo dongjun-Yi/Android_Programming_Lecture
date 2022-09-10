@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/buttonStartCo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttonStartCo" />
+
+    <Button
+        android:id="@+id/buttonStopCo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttonStopCo" />
+
+    <Button
+        android:id="@+id/buttonStartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttonStartService" />
+
+    <Button
+        android:id="@+id/buttonStartedCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buttonStartedCount" />
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textViewCount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</LinearLayout>

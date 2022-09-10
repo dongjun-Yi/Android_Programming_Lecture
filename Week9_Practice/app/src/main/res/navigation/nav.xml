@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.week9_practice.Fragment1"
+        android:label="Fragment1" >
+        <action
+            android:id="@+id/action_fragment1_to_framgent2"
+            app:destination="@id/framgent2" />
+    </fragment>
+    <fragment
+        android:id="@+id/framgent2"
+        android:name="com.example.week9_practice.Framgent2"
+        android:label="Framgent2" >
+        <action
+            android:id="@+id/action_framgent2_pop_including_fragment1"
+            app:popUpTo="@id/fragment1"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

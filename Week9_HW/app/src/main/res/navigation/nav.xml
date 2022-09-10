@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.week9_hw.home_fragment"
+        android:label="home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment_to_nav_fragment1"
+            app:destination="@id/nav_fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment1"
+        android:name="com.example.week9_hw.Nav_fragment1"
+        android:label="Nav_fragment1" >
+        <action
+            android:id="@+id/action_nav_fragment1_to_nav_fragment2"
+            app:destination="@id/nav_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fragment2"
+        android:name="com.example.week9_hw.Nav_fragment2"
+        android:label="Nav_fragment2" >
+        <action
+            android:id="@+id/action_nav_fragment2_to_home_fragment"
+            app:destination="@id/home_fragment"
+            app:popUpTo="@id/home_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
